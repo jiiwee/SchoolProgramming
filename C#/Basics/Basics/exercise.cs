@@ -52,6 +52,7 @@ namespace Training
         }
     }
 }
+
 b)
 using System;
 
@@ -175,10 +176,10 @@ namespace Training
     {
         static void Main(string[] args)
         {
-            float destination;
-            Console.WriteLine("Destination: ");
-            destination = float.Parse(Console.ReadLine());
-            float gas = (float)7.02 / 100 * destination;
+            float distance;
+            Console.WriteLine("distance: ");
+            distance = float.Parse(Console.ReadLine());
+            float gas = (float)7.02 / 100 * distance;
             float price = gas * (float)1.595;
             Console.WriteLine("Gas: {0}, Price: {1}", gas, price);
         }
@@ -204,7 +205,9 @@ namespace Training
         }
     }
 }
+
 Tehtävä 8.
+
 using System;
 
 namespace Training
@@ -217,11 +220,9 @@ namespace Training
             int numA = int.Parse(Console.ReadLine());
             int numB = int.Parse(Console.ReadLine());
             int numC = int.Parse(Console.ReadLine());
-            if (numA > numB)
-                if (numA > numC)
+            if (numA > numB && numA > numC)
                     Console.WriteLine("\nLargest: " + numA);
-            if (numB > numA)
-                if (numB > numC)
+            if (numB > numA && numB > numC)
                     Console.WriteLine("\nLargest: " + numB);
                 else
                     Console.WriteLine("\nLargest: " + numC);
@@ -275,8 +276,8 @@ namespace Training
         }
     }
 }
-Tehtävä 11.
 
+Tehtävä 11.
 using System;
 
 namespace Training
@@ -302,7 +303,7 @@ namespace Training
         }
     }
 }
-/*
+
 Tehtävä 12
 using System;
 
@@ -369,6 +370,7 @@ namespace Training
         }
     }
 }
+
 Tehtävä 14.
 using System;
 
@@ -560,38 +562,38 @@ namespace Training
 }
 
 Tehtävä 19.
+*/
 using System;
 using System.Linq;
 namespace Training
 {
     class Program
     {
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
             string[] wordBank = { "banana", "orange", "watermelon", "apple" };
-            char[] usedLetters = new char[100];
             Random randGen = new Random();
-            var random = randGen.Next(0, 3);
+            int random = randGen.Next(wordBank.Length);
             string randomWord = wordBank[random];
-            char[] letter = new char[randomWord.Length];
+            char[] hidden = new char[randomWord.Length];
             for (int i = 0; i < randomWord.Length; i++)
             {
-                letter[i] = '_';
+                hidden[i] = '_';
             }
             int lives = 7;                                                                                  // If letter is used already
             Console.WriteLine("HANGMAN (7 tries)");                                                         // If wrong aswer lives--
-            Console.Write("Guess a letter: ");                                                              
+            Console.Write("Guess a letter: ");
             while (true)
             {
                 char playerGuess = char.Parse(Console.ReadLine());
-                
+
                 for (int k = 0; k < randomWord.Length; k++)
                 {
                     if (playerGuess == randomWord[k])
-                        letter[k] = playerGuess;                   
+                        hidden[k] = playerGuess;
                 }
-                Console.WriteLine(letter); 
-                if (new string(letter) == randomWord)
+                Console.WriteLine(hidden);
+                if (new string(hidden) == randomWord)
                 {
                     Console.WriteLine("You won!");
                     Console.ReadLine();
@@ -607,7 +609,8 @@ namespace Training
         }
     }
 }
-*/
+
+
 
 
 
