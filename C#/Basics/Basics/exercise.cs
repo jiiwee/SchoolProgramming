@@ -272,6 +272,8 @@ namespace Training
             {
                 if (numbers[i] % 2 == 0)
                     Console.WriteLine(numbers[i] + ": HEP");
+                else if (numbers[i] % 2 != 0)
+                    Console.WriteLine(numbers[i]);
             }
         }
     }
@@ -305,6 +307,7 @@ namespace Training
 }
 
 Tehtävä 12
+
 using System;
 
 namespace Training
@@ -330,7 +333,7 @@ namespace Training
 }
 
 Tehtävä 13.
-using System; 
+using System;       
 
 namespace Training
 {
@@ -366,7 +369,7 @@ namespace Training
             }                    
             Console.WriteLine("Total points: ");
             sum = numbers[1] + numbers[2] + numbers[3];
-            Console.WriteLine(sum);
+            Console.WriteLine("Sum: " + sum);
         }
     }
 }
@@ -562,7 +565,7 @@ namespace Training
 }
 
 Tehtävä 19.
-*/
+
 using System;
 using System.Linq;
 namespace Training
@@ -571,7 +574,7 @@ namespace Training
     {
         static void Main(string[] args)
         {
-            string[] wordBank = { "banana", "orange", "watermelon", "apple" };
+            string[] wordBank = { "banana", "orange", "watermelon", "apple", "lemon", "kiwi"};
             Random randGen = new Random();
             int random = randGen.Next(wordBank.Length);
             string randomWord = wordBank[random];
@@ -581,16 +584,23 @@ namespace Training
                 hidden[i] = '_';
             }
             int lives = 7;                                                                                  // If letter is used already
-            Console.WriteLine("HANGMAN (7 tries)");                                                         // If wrong aswer lives--
+            Console.WriteLine("HANGMAN");                                                                   // If wrong aswer lives--
             Console.Write("Guess a letter: ");
             while (true)
             {
-                char playerGuess = char.Parse(Console.ReadLine());
+                
+                char playerGuess = char.Parse(Console.ReadLine().ToLower());
+                Console.WriteLine("Lives: " + lives);
+
+                bool fail = true;
 
                 for (int k = 0; k < randomWord.Length; k++)
                 {
                     if (playerGuess == randomWord[k])
+                    {
                         hidden[k] = playerGuess;
+                        fail = false;
+                    }
                 }
                 Console.WriteLine(hidden);
                 if (new string(hidden) == randomWord)
@@ -599,7 +609,11 @@ namespace Training
                     Console.ReadLine();
                     break;
                 }
-                lives--;
+                if (fail)
+                {
+                    Console.WriteLine("Wrong!");
+                    lives--;
+                }
                 if (lives == 0)
                 {
                     Console.WriteLine("You lost! The word is: " + randomWord);
@@ -609,7 +623,7 @@ namespace Training
         }
     }
 }
-
+*/
 
 
 
