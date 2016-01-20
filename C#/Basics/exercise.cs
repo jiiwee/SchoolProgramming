@@ -623,8 +623,58 @@ namespace Training
         }
     }
 }
+
+tehtävä 20. bonus
+
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Training
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //string filename = "cat.txt";
+            string inputString = File.ReadAllText(@"C:\Users\Hea7hcliff\Documents\School\GitHub\C#\Basics\cat.txt"); 
+            inputString = inputString.ToLower();
+            string[] deleteChars = { ";", ",", ".", "-", "_", "^", "'",
+                        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "\n"};
+            foreach (string character in deleteChars)
+            {
+                inputString = inputString.Replace(character, "");
+            }
+            List<string> wordList = inputString.Split(' ').ToList();
+
+            Dictionary<string, int> dictionary = new Dictionary<string, int>();
+            foreach (string word in wordList)
+            {
+                if (dictionary.ContainsKey(word))
+                {
+                    dictionary[word]++;
+                }
+                else
+                {
+                    dictionary[word] = 1;
+                }
+            }
+            int count = 1;
+            var sortedDict = (from entry in dictionary orderby entry.Value descending select entry).ToDictionary(pair => pair.Key, pair => pair.Value);
+            Console.WriteLine("Most used words in 'cat' story.\n");
+            foreach (KeyValuePair<string, int> pair in sortedDict)
+            {
+                Console.WriteLine(count + "\t" + pair.Key + "\t" + pair.Value);
+                count++;
+                if (count > 10)
+                {
+                    break;
+                }
+            }
+        }
+    }
+}
 */
-
-
 
 
