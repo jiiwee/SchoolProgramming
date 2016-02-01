@@ -1,8 +1,7 @@
 ﻿/*
-Tehtävä 1.
 using System;
 
-namespace Training
+namespace Exercise1
 {
     class Program
     {
@@ -19,11 +18,9 @@ namespace Training
     }
 }
 
-Tehtävä 2.
-a)
 using System;
 
-namespace Training
+namespace Exercise2a
 {
     class Program
     {
@@ -53,10 +50,9 @@ namespace Training
     }
 }
 
-b)
 using System;
 
-namespace Training
+namespace Exercise2b
 {
     class Program
     {
@@ -103,10 +99,9 @@ Console.WriteLine("Score:");
     }
 }
 
-Tehtävä 3.
 using System;
 
-namespace Training
+namespace Exercise3
 {
     class Program
     {
@@ -123,10 +118,9 @@ namespace Training
     }
 }
 
-Tehtävä 4.
 using System;
 
-namespace Training
+namespace Exercise4
 {
     class Program
     {
@@ -147,10 +141,9 @@ namespace Training
     }
 }
 
-Tehtävä 5.
 using System;
 
-namespace Training
+namespace Exercise5
 {
     class Program
     {
@@ -167,10 +160,9 @@ namespace Training
     }
 }
 
-Tehtävä 6.
 using System;
 
-namespace Training
+namespace Exercise6
 {
     class Program
     {
@@ -186,10 +178,9 @@ namespace Training
     }
 }
 
-Tehtävä 7.
 using System;
 
-namespace Training
+namespace Exercise7
 {
     class Program
     {
@@ -206,12 +197,9 @@ namespace Training
     }
 }
 
-Tehtävä 8.
-
 using System;
 
-namespace Training
-{
+namespace Exercise8
     class Program
     {
         static void Main(string[] args)
@@ -230,10 +218,9 @@ namespace Training
     }
 }
 
-Tehtävä 9.
 using System;
 
-namespace Training
+namespace Exercise9
 {
     class Program
     {
@@ -257,10 +244,9 @@ namespace Training
     }
 }
 
-Tehtävä 10
 using System;
 
-namespace Training
+namespace Exercise10
 {
     class Program
     {
@@ -279,10 +265,9 @@ namespace Training
     }
 }
 
-Tehtävä 11.
 using System;
 
-namespace Training
+namespace Exercise11
 {
     class Program
     {
@@ -306,11 +291,9 @@ namespace Training
     }
 }
 
-Tehtävä 12
-
 using System;
 
-namespace Training
+namespace Exercise12
 {
     class Program
     {
@@ -332,10 +315,9 @@ namespace Training
     }
 }
 
-Tehtävä 13.
 using System;       
 
-namespace Training
+namespace Exercise13
 {
     class Program
     {
@@ -374,10 +356,9 @@ namespace Training
     }
 }
 
-Tehtävä 14.
 using System;
 
-namespace Training
+namespace Exercise14
 {
     class Program
     {
@@ -408,10 +389,9 @@ namespace Training
     }
 }
 
-Tehtävä 15.
 using System;
 
-namespace Training
+namespace Exercise15
 {
     class Program
     {
@@ -446,10 +426,9 @@ namespace Training
     }
 }
 
-Tehtävä 16.
 using System;
 
-namespace Training
+namespace Exercise16
 {
     class Program
     {
@@ -479,11 +458,10 @@ namespace Training
     }
 }
 
-Tehtävä 17.
 using System;
 using System.Linq;
 
-namespace Training
+namespace Exercise17
 {
     class Program
     {
@@ -533,10 +511,9 @@ namespace Training
     }
 }
 
-Tehtävä 18.
 using System;
 
-namespace Training
+namespace Exercise18
 {
     class Program
     {
@@ -564,11 +541,10 @@ namespace Training
     }
 }
 
-Tehtävä 19.
-
 using System;
 using System.Linq;
-namespace Training
+
+namespace Exercise19
 {
     class Program
     {
@@ -583,8 +559,8 @@ namespace Training
             {
                 hidden[i] = '_';
             }
-            int lives = 7;                                                                                  // If letter is used already
-            Console.WriteLine("HANGMAN");                                                                   // If wrong aswer lives--
+            int lives = 7;                                                                                 
+            Console.WriteLine("HANGMAN");                                                                   
             Console.Write("Guess a letter: ");
             while (true)
             {
@@ -624,14 +600,12 @@ namespace Training
     }
 }
 
-tehtävä 20. bonus
-
 using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Training
+namespace ExerciseBonus
 {
     class Program
     {

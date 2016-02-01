@@ -1,5 +1,4 @@
 ﻿/*
-Tehtävä 4.
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,7 +44,6 @@ namespace OOB
     }
 }
 
-Tehtävä 5.
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -99,7 +97,6 @@ namespace OOB
     }
 }
 
-Tehtävä 6.
 using System;
 using System.Collections.Generic;
 using System.Linq;
