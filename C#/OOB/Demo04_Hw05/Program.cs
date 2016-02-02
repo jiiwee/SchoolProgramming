@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo04
+namespace Demo04_Hw05
 {
     class Exercice5
     {
