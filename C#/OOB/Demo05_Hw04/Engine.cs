@@ -19,7 +19,6 @@ namespace Demo05_Hw04
             Manufacturer = mf;
             HorsePower = hp;
             CubicCapacity = cc;
-
         }
 
         public override string ToString()
