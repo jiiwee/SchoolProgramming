@@ -20,8 +20,6 @@ namespace Demo06_Hw03
         public override string ToString()
         {
             return Cardvalue + " " + Suit;
-        }
-
-       
+        }      
     }
 }

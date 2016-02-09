@@ -14,12 +14,7 @@ namespace Demo06_Hw03
             foreach (Card c in deck1.cards)
             {
                 Console.WriteLine(c);
-            }
-            
-                
-
-            
-        }
-        
+            }                                  
+        }     
     }
 }
