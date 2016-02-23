@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace GUI
+namespace Demo09_Hw03
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -39,7 +39,7 @@ namespace GUI
                 LaskeLasiPintaAla.Text = "" + ((ikkunaleveys - karmileveys * 2) * (ikkunakorkeus - karmileveys * 2)) / 10 + " cm^2";
                 LaskeKarmiPiiri.Text = "" + (2 * (ikkunaleveys + ikkunakorkeus) / 10) + " cm^2";
             }
-            catch(Exception)
+            catch (Exception)
             {
 
             }
