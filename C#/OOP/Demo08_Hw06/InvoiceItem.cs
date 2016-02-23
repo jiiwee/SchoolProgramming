@@ -17,10 +17,6 @@ namespace Demo08_Hw06
             {
                 return Price * Quantity;
             }
-            set
-            {
-                Total = value;
-            }
         }
 
         public InvoiceItem(string name, double price, double quantity)
