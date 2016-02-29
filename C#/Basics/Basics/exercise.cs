@@ -153,8 +153,8 @@ namespace Exercise5
             Console.WriteLine("Time in seconds: ");
             GivenSeconds = int.Parse(Console.ReadLine());
             int hours = GivenSeconds / 3600;
-            int minutes = (GivenSeconds % 3600) / 60;
-            int seconds = (GivenSeconds & 3600) / 60;
+            int minutes = GivenSeconds / 60 - hours * 60;
+            int seconds = GivenSeconds % 60;
             Console.WriteLine("{0} hours {1} minutes {2} seconds", hours, minutes, seconds);
         }
     }
@@ -189,7 +189,7 @@ namespace Exercise7
             int year;
             Console.WriteLine("Year: ");
             year = int.Parse(Console.ReadLine());
-            if (year % 4 == 0)
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
                 Console.WriteLine("Leap year!");
             else
                 Console.WriteLine("Not Leep Year!");
@@ -650,5 +650,6 @@ namespace ExerciseBonus
     }
 }
 */
+
 
 
