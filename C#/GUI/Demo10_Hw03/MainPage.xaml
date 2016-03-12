@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Demo10_Hw03.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Demo10_Hw03"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="595,143,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="Lotto"/>
+            <ListBoxItem Content="Viking Lotto"/>
+            <ListBoxItem Content="Eurojackpot"/>
+        </ComboBox>
+        <TextBox x:Name="textBoxDraw" HorizontalAlignment="Left" Margin="595,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.166,0.181"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="223,155,0,0" TextWrapping="Wrap" Text="Chooce a game:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="223,227,0,0" TextWrapping="Wrap" Text="Number of draws" VerticalAlignment="Top"/>
+        <Button x:Name="buttonDraw" Content="Draw" HorizontalAlignment="Left" Margin="397,331,0,0" VerticalAlignment="Top" Click="buttonDraw_Click"/>
+        <Button x:Name="buttonClear" Content="Clear" HorizontalAlignment="Left" Margin="517,331,0,0" VerticalAlignment="Top" Click="buttonClear_Click"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="223,421,0,0" TextWrapping="Wrap" Text="Random numbers:" VerticalAlignment="Top" RenderTransformOrigin="0.196,0.085"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="196" Margin="223,492,0,0" VerticalAlignment="Top" Width="436" RenderTransformOrigin="0.16,0.077">
+            <TextBlock x:Name="textBlockRandomNum" TextWrapping="Wrap" Text=""/>
+        </ScrollViewer>
+    </Grid>
+</Page>
