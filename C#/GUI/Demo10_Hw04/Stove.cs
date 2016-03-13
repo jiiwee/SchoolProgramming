@@ -25,17 +25,20 @@ namespace Demo10_Hw04
 
             set
             {
-                if (value < maxTemperature) { temperature = value; }
-                else
+                if (value < maxTemperature && value > minTemperature)
                 {
-                    info = "Temperature is too high!";
+                    temperature = value;                    
+                }
+
+                else if (value > maxTemperature)
+                {
+                    info = "Temperature is too high! Set to Max: " + maxTemperature;
                     temperature = maxTemperature;
                 }
 
-                if (value > minTemperature) { temperature = value; }
                 else
                 {
-                    info = "Temperature is too low!";
+                    info = "Temperature is too low! Set to Min: " + minTemperature;
                     temperature = minTemperature;
                 }
             }
@@ -50,17 +53,20 @@ namespace Demo10_Hw04
 
             set
             {
-                if (value < maxHumidity) { humidity = value; } 
-                else
+                if (value < maxHumidity && value > minHumidity)
+                {                   
+                    humidity = value;
+                } 
+
+                else if (value > maxHumidity)
                 {
-                    info = "Humidity is too high!";
+                    info = "Humidity is too high! Set to Max: " + maxHumidity;
                     humidity = maxHumidity;
                 }
 
-                if (value > minHumidity) { humidity = value; }
-                else
+                else 
                 {
-                    info = "Humidity is too low!";
+                    info = "Humidity is too low! Set to Min: " + minHumidity;
                     humidity = minHumidity;
                 }
             }
