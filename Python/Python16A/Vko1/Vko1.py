@@ -1,6 +1,8 @@
 #-*- coding: utf-8 -*-
 # -*- coding: cp1252 -*-
 import math
+
+# Panu Partanen Viikko 1 Tehtävät
 '''
 # Week 1
 #------------------------------------------#

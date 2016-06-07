@@ -6,7 +6,7 @@
     <ProjectGuid>34731e74-dbbc-4cb7-9d45-ac97cc0bb046</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Python16A.py</StartupFile>
+    <StartupFile>Vko1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,7 +23,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Python16A.py" />
+    <Compile Include="Vko1.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

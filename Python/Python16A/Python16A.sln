@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Vko1", "Python16A\Vko1.pyproj", "{34731E74-DBBC-4CB7-9D45-AC97CC0BB046}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Vko1", "Vko1\Vko1.pyproj", "{34731E74-DBBC-4CB7-9D45-AC97CC0BB046}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Vko2", "Vko2\Vko2.pyproj", "{3F3F9E89-EC65-4622-9292-292A909D2D49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{34731E74-DBBC-4CB7-9D45-AC97CC0BB046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{34731E74-DBBC-4CB7-9D45-AC97CC0BB046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3F9E89-EC65-4622-9292-292A909D2D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3F9E89-EC65-4622-9292-292A909D2D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
