@@ -3,15 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>3f3f9e89-ec65-4622-9292-292a909d2d49</ProjectGuid>
+    <ProjectGuid>ea5a3e0b-0a3f-45f5-a7f1-f4cda8fd1196</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Vko2.py</StartupFile>
+    <StartupFile>Tehtävä2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Vko2</Name>
-    <RootNamespace>Vko2</RootNamespace>
+    <Name>Tehtävä2</Name>
+    <RootNamespace>Tehtävä2</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Vko2.py" />
+    <Compile Include="Tehtävä2.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

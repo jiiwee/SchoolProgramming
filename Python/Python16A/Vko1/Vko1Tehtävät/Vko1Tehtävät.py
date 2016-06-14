@@ -1,20 +1,20 @@
-#-*- coding: utf-8 -*-
 # -*- coding: cp1252 -*-
+
 import math
 
-# Panu Partanen Viikko 1 Teht√§v√§t
+# Panu Partanen Viikko 1 Teht‰v‰t
+# GitHub https://github.com/Hea7hcliff/SchoolProgramming/tree/master/Python/Python16A
 '''
-# Week 1
 #------------------------------------------#
 
-# Excercise 1
+# Teht‰v‰ 1
 
-merkkijono = "merkkijonosis√§lt√∂√§"
-print(merkkijono)
+something = "merkkijonosis‰ltˆ‰"
+print(something)
 
 #------------------------------------------#
 
-# Excercise 2
+# Teht‰v‰ 2
 
 num1 = 1000
 num2 = 24
@@ -24,16 +24,16 @@ print(total)
 
 #------------------------------------------#
 
-# Excercise 3
+# Teht‰v‰ 3
 
-print("T√§m√§ on usean rivin tulostus:\nTeksti on jaettu usealle eri riville.\nNimi:\tPetteri\nAmmatti: Kartturi")
+print("T‰m‰ on usean rivin tulostus:\nTeksti on jaettu usealle eri riville.\nNimi:\tPetteri\nAmmatti: Kartturi")
 
 #------------------------------------------#
 
-# Excercise 4
+# Teht‰v‰ 4
 
 print("Laskin")
-number1 = input("Anna ensimm√§inen luku: ")
+number1 = input("Anna ensimm‰inen luku: ")
 number1 = int(number1)
 number2 = input("Anna toinen luku: ")
 number2 = int(number2)
@@ -42,27 +42,27 @@ print("Tulos on: " , sum)
 
 #------------------------------------------#
 
-# Excercise 5
+# Teht‰v‰ 5
 
 word = "Hattukauppias"
-print("Muuttujan 4 ensimm√§ist√§ kirjainta ovat", word[:4])
-print("Muuttujan 4 viimeist√§ kirjainta ovat", word[9:])
-print("Muuttujan teksti on v√§√§rinp√§in", word[::-1])
+print("Muuttujan 4 ensimm‰ist‰ kirjainta ovat", word[:4])
+print("Muuttujan 4 viimeist‰ kirjainta ovat", word[9:])
+print("Muuttujan teksti on v‰‰rinp‰in", word[::-1])
 
 #------------------------------------------#
 
-# Excercise 6
+# Teht‰v‰ 6
 
 number1 = input("Anna luku: ")
 number1 = int(number1)
-jakoj√§√§nn√∂s = number1 % 2
+remainder = number1 % 2
 
-if jakoj√§√§nn√∂s == 0 : print("Luku on parillinen")
+if remainder == 0 : print("Luku on parillinen")
 else : print("Luku ei ole parillinen")
 
 #------------------------------------------#
 
-# Excercise 7
+# Teht‰v‰ 7
 
 number = input("Valitse kohde (1-3): ")
 number = int(number)
@@ -70,13 +70,13 @@ number = int(number)
 if number == 1 : print("Haukion kala Oy") 
 elif number == 2 : print("Metallipaja VasaraAika") 
 elif number == 3 : print("Balin palapelitehdas") 
-else : print("Luku ei ole 1-3 sis√§ll√§")
+else : print("Luku ei ole 1-3 sis‰ll‰")
 
 #------------------------------------------#
 
-# Excercise 8
+# Teht‰v‰ 8
 
-number1 = input("Anna ensimm√§inen luku: ")
+number1 = input("Anna ensimm‰inen luku: ")
 number1 = int(number1)
 number2 = input("Anna toinen luku: ")
 number2 = int(number2)
@@ -90,13 +90,13 @@ if number3 == 1 : total = number1 + number2
 elif number3 == 2 : total = number1 - number2
 elif number3 == 3 : total = number1 * number2
 elif number3 == 4 : total = number1 / number2
-else : print("Luku ei ole 1-4 sis√§ll√§")
+else : print("Luku ei ole 1-4 sis‰ll‰")
 
 print("Tulos on: ", total)
 
 #------------------------------------------#
 
-# Excercise 9
+# Teht‰v‰ 9
 
 for i in range(0, 5):
   line = 'Olemme kierroksella'
@@ -104,7 +104,7 @@ for i in range(0, 5):
 
 #------------------------------------------#
 
-# Excercise 10
+# Teht‰v‰ 10
 
 running = True
 while running : 
@@ -115,9 +115,9 @@ while running :
 
 #------------------------------------------#
 
-# Excercise 11
+# Teht‰v‰ 11
 
-number1 = input("Anna ensimm√§inen luku: ")
+number1 = input("Anna ensimm‰inen luku: ")
 number1 = int(number1)
 number2 = input("Anna toinen luku: ")
 number2 = int(number2)
@@ -134,21 +134,21 @@ while running :
     elif number3 == 3 : total = number1 * number2
     elif number3 == 4 : total = number1 / number2
     elif number3 == 5 : 
-        number1 = input("Anna uusi ensimm√§inen luku: ")
+        number1 = input("Anna uusi ensimm‰inen luku: ")
         number1 = int(number1)
         number2 = input("Anna uusi toinen luku: ")
         number2 = int(number2)
         continue
     elif number3 == 6 : running = False
-    else : print("Luku ei ole 1-6 sis√§ll√§")
+    else : print("Luku ei ole 1-6 sis‰ll‰")
     print()
     print("Tulos on: ", total)
 
 #------------------------------------------#
 
-# Excercise 12
+# Teht‰v‰ 12
 
-money = input("Anna valuuttam√§√§r√§ euroissa: ")
+money = input("Anna valuuttam‰‰r‰ euroissa: ")
 money = int(money)
 
 dollar = money/0.73
@@ -156,29 +156,29 @@ print("Muunnettu valuutta: ", dollar, "$")
 
 #------------------------------------------#
 
-# Excercise 13
+# Teht‰v‰ 13
 
-mitta = input("Anna kartan mittakaava: 1:")
-mitta = int(mitta)
-matka = input("Anna kartalta mitattu matka senttimetrein√§: ")
-matka = int(matka)
-mitta = mitta/10000
-km = matka*mitta
+measure = input("Anna kartan mittakaava: 1:")
+measure = int(measure)
+distance = input("Anna kartalta mitattu matka senttimetrein‰: ")
+distance = int(distance)
+measure = measure/10000
+km = distance*measure
 print("Kuljettu matka = " , km , "km")
 
 #------------------------------------------#
 
-# Excercise 14
+# Teht‰v‰ 14
 
-s√§de = input("Anna ympyr√§n s√§de: ")
-s√§de = int(s√§de)
+radius = input("Anna ympyr‰n s‰de: ")
+radius = int(radius)
 
-ala = math.pi*s√§de**2
-print("Ympyr√§n pinta-ala =", ala)
+area = math.pi*radius**2
+print("Ympyr‰n pinta-ala =", area)
 
 #------------------------------------------#
 
-# Excercise 15
+# Teht‰v‰ 15
 
 for i in range(0, 50):
   line = 'Panu Partanen'
@@ -186,62 +186,62 @@ for i in range(0, 50):
 
 #------------------------------------------#
 
-# Excercise 16
+# Teht‰v‰ 16
 
 while True :    
-    temperature = input("Anna l√§mp√∂tila: ")
+    temperature = input("Anna l‰mpˆtila: ")
     temperature = float(temperature)
-    if temperature < -30 : print("Todella kylm√§√§")
-    elif temperature >= -30 and temperature <= 0 : print("Kylm√§√§")
+    if temperature < -30 : print("Todella kylm‰‰")
+    elif temperature >= -30 and temperature <= 0 : print("Kylm‰‰")
     elif temperature > 0 and temperature <= 20 : print("Sopivaa")
     else : print("Todella kuumaa")
 
 #------------------------------------------#
 
-# Excercise 17
+# Teht‰v‰ 17
 
-summa = 0
-kappale = input("Anna arvosanojen m√§√§r√§: ")
-kappale = int(kappale)
-for i in range (0, kappale) :
-    arvosana = input("Arvosana: ")
-    arvosana = int(arvosana)
-    if arvosana < 0 : break
-    elif arvosana > 5 :         
+total = 0
+piece = input("Anna arvosanojen m‰‰r‰: ")
+piece = int(piece)
+for i in range (0, piece) :
+    grade = input("Arvosana: ")
+    grade = int(grade)
+    if grade < 0 : break
+    elif grade > 5 :         
         print("Uusi arvosana")        
-        arvosana = input("Arvosana: ")
-        arvosana = int(arvosana)
-        summa += arvosana
+        grade = input("Arvosana: ")
+        grade = int(grade)
+        total += grade
         continue
-    else : summa += arvosana
-ka = summa / kappale
-print("Keskiarvo on: ", ka)
+    else : total += grade
+average = total / piece
+print("Keskiarvo on: ", average)
 
 #------------------------------------------#
 
-# Excercise 18
+# Teht‰v‰ 18
 
-luku = input("Anna  0, 1 tai 2: ")
-luku = int(luku)
+num = input("Anna  0, 1 tai 2: ")
+num = int(num)
 
-#TAPA 1
+# TAPA 1
 
-# if luku == 0 or luku == 1 or luku == 2 : print()
+# if num == 0 or num == 1 or num == 2 : print()
 # else : print("VIRHE")
 
-#TAPA 2
+# TAPA 2
 
-#if luku != 0 and luku != 1 and luku !=2 : print("VIRHE")
+#if num != 0 and num != 1 and num !=2 : print("VIRHE")
 
 #------------------------------------------#
 
-# Excercise 19
+# Teht‰v‰ 19
 
-kitka = input("Anna kitkakerroin v√§lilt√§ 0.1 - 0.8: ")
-kitka = float(kitka)
+friction = input("Anna frictionkerroin v‰lilt‰ 0.1 - 0.8: ")
+friction = float(friction)
 
 for i in range (30,140,10) :
-    jmatka = (i/3.6)**2/(2*kitka*9.81)
-    jtmatka = float(jmatka)
-    print("Jarrutusmatka nopeudesta ", i , " on " , jmatka , "m")
+    brakingDist = (i/3.6)**2/(2*friction*9.81)
+    brakingDist = float(brakingDist)
+    print("Jarrutusmatka nopeudesta ", i , " on " , brakingDist , "m")
 '''
