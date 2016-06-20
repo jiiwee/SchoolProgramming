@@ -5,7 +5,7 @@
 
 def main():
     
-    filename = input("Mink‰ niminen tiedosto luodaan? (tekstitiedosto = .txt p‰‰te: ")
+    filename = input("Mink‰ niminen tiedosto luodaan? (tekstitiedosto = .txt p‰‰te): ")
     file = open(filename, "w")
 
     text = input("Mit‰ haluat kirjotitaa tiedostoon? : ")
